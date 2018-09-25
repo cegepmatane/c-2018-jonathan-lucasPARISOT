@@ -7,20 +7,21 @@
 //============================================================================
 
 using namespace std;
-#include "Personnage"
-#include "Guerrier"
-#include "Kamikaze"
-#include "Mage"
+#include "Personnage.h"
+//#include "Guerrier.h"
+//#include "Kamikaze.h"
+//#include "Mage.h"
 #include <iostream>
 
 int main() {
 	
 
-	Personnage personnage = new Personnage();
+	Personnage personnage;
 
 	personnage.rotationGauche();
 	personnage.rotationDroite();
 
+	/*
 	personnage = new Guerrier();
 	personnage.attaque();
 	personnage.avance();
@@ -32,7 +33,7 @@ int main() {
 	Mage mage = new Mage();
 	mage.attaque();
 	mage.avance();
-
+	*/
 
 
 
