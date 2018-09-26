@@ -1,13 +1,21 @@
-using namespace std;
+#ifndef PERSONNAGE_H_
+#define PERSONNAGE_H_
+
 #include <iostream>
 
-class Personnage{
+namespace std{
 
-public:
-	Personnage();
-	virtual void attaquer();
-	virtual void avancer();
-	void rotationGauche();
-	void rotationDroite();
+	class Personnage{
 
-};
+	public:
+		Personnage();
+		virtual ~Personnage();
+		virtual void attaquer();
+		virtual void avancer();
+		void rotationGauche();
+		void rotationDroite();
+
+	};
+}
+
+#endif

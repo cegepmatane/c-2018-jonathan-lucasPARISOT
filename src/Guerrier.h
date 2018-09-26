@@ -1,15 +1,21 @@
-using namespace std;
+#ifndef GUERRIER_H_
+#define GUERRIER_H_
+
+
 #include <iostream>
+#include "Personnage.h"
+
+namespace std{
+
+	class Guerrier:public Personnage{
 
 
-class Guerrier:Personnage{
+	public:
+		Guerrier();
+		void attaquer();
+		void avancer();
+	};
 
+}
 
-public:
-	Guerrier();
-	void attaquer();
-	void avancer();
-
-
-};
-
+#endif

@@ -1,7 +1,6 @@
 using namespace std;
-#include "Personnage.h"
+
 #include "Kamikaze.h"
-#include <iostream>
 
 	Kamikaze::Kamikaze() {
 

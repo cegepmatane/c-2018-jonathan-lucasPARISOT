@@ -1,7 +1,5 @@
 using namespace std;
-#include "Personnage.h"
 #include "Mage.h"
-#include <iostream>
 
 	Mage::Mage() {
 
@@ -13,3 +11,4 @@ using namespace std;
 	void Mage::avancer() {
 		cout << "Velocitas Maximum !" <<endl;
 	}
+

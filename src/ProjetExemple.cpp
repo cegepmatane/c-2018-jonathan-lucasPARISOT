@@ -16,30 +16,23 @@ using namespace std;
 int main() {
 	
 
-	Personnage personnage;
+	Personnage* referencePersonnageGuerrier = new Guerrier();
+	referencePersonnageGuerrier->avancer();
+	referencePersonnageGuerrier->attaquer();
 
-	personnage.rotationGauche();
-	personnage.rotationDroite();
+	Personnage* referencePersonnageKamikaze = new Kamikaze();
+	referencePersonnageKamikaze->avancer();
+	referencePersonnageKamikaze->attaquer();
 
-	Guerrier guerrier;
+	Personnage* referencePersonnageMage = new Mage();
+	referencePersonnageMage->avancer();
+	referencePersonnageMage->attaquer();
 
-	guerrier.avancer();
-	guerrier.attaquer();
-
-	Kamikaze kamikaze;
-	kamikaze.avancer();
-	kamikaze.attaquer();
-
-
-
-	Mage mage;
-	mage.avancer();
-	mage.attaquer();
+	referencePersonnageMage->rotationDroite();
 
 
-
-
-
-
+	delete referencePersonnageGuerrier;
+	delete referencePersonnageKamikaze;
+	delete referencePersonnageMage;
 	return 0;
 }

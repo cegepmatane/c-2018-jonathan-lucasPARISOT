@@ -7,6 +7,10 @@ using namespace std;
 
 	}
 
+	Personnage::~Personnage() {
+
+	}
+
 	void Personnage::attaquer() {
 		cout << "Le personnage attaque" << endl;
 	}

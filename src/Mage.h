@@ -1,12 +1,18 @@
-using namespace std;
+#ifndef MAGE_H_
+#define MAGE_H_
+
 #include <iostream>
+#include "Personnage.h"
 
-class Mage:Personnage {
+namespace std{
 
-public:
-	Mage();
-	void attaquer();
-	void avancer();
-};
+	class Mage:public Personnage {
 
+	public:
+		Mage();
+		void attaquer();
+		void avancer();
+	};
+}
 
+#endif

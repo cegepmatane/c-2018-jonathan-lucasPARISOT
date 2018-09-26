@@ -1,12 +1,19 @@
-using namespace std;
+#ifndef KAMIKAZE_H_
+#define KAMIKAZE_H_
+
 #include <iostream>
+#include "Personnage.h"
 
-class Kamikaze:Personnage {
+namespace std{
 
-public:
-	Kamikaze();
-	void attaquer();
-	void avancer();
-};
+	class Kamikaze:public Personnage {
 
+	public:
+		Kamikaze();
+		void attaquer();
+		void avancer();
+	};
 
+}
+
+#endif

@@ -1,6 +1,7 @@
-using namespace std;
-#include "Personnage.h"
 #include "Guerrier.h"
+
+using namespace std;
+
 
 	Guerrier::Guerrier(){
 
