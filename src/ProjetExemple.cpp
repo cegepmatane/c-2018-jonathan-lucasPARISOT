@@ -8,9 +8,9 @@
 
 using namespace std;
 #include "Personnage.h"
-//#include "Guerrier.h"
-//#include "Kamikaze.h"
-//#include "Mage.h"
+#include "Guerrier.h"
+#include "Kamikaze.h"
+#include "Mage.h"
 #include <iostream>
 
 int main() {
@@ -21,19 +21,22 @@ int main() {
 	personnage.rotationGauche();
 	personnage.rotationDroite();
 
-	/*
-	personnage = new Guerrier();
-	personnage.attaque();
-	personnage.avance();
+	Guerrier guerrier;
 
-	Kamikaze kamikaze = new Kamikaze();
-	kamikaze.attaque();
-	kamikaze.avance();
+	guerrier.avancer();
+	guerrier.attaquer();
 
-	Mage mage = new Mage();
-	mage.attaque();
-	mage.avance();
-	*/
+	Kamikaze kamikaze;
+	kamikaze.avancer();
+	kamikaze.attaquer();
+
+
+
+	Mage mage;
+	mage.avancer();
+	mage.attaquer();
+
+
 
 
 
