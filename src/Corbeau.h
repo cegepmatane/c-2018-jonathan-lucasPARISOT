@@ -1,15 +1,15 @@
-#ifndef CREEPER_H_
-#define CREEPER_H_
+#ifndef CORBEAU_H_
+#define CORBEAU_H_
 
 #include <iostream>
 #include "Animal.h"
 
 namespace std {
 
-	class Creeper {
+	class Corbeau {
 		public:
-			Creeper();
-			virtual ~Creeper();
+			Corbeau();
+			virtual ~Corbeau();
 			void crier();
 	};
 

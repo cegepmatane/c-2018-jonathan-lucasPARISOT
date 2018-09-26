@@ -1,18 +1,18 @@
-#ifndef CREEPER_H_
-#define CREEPER_H_
+#ifndef CHATON_H_
+#define CHATON_H_
 
 #include <iostream>
 #include "Animal.h"
 
 namespace std {
 
-	class Creeper {
+	class Chaton {
 		public:
-			Creeper();
-			virtual ~Creeper();
+			Chaton();
+			virtual ~Chaton();
 			void crier();
 	};
 
-}
+	}
 
 #endif

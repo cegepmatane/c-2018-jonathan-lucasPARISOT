@@ -8,4 +8,7 @@ namespace std {
 	Creeper::~Creeper() {
 	}
 
+	void Creeper::crier(){
+			cout << "Tchhhhhhh !" <<endl;
+	}
 }
