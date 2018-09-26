@@ -6,7 +6,7 @@
 
 namespace std {
 
-	class Creeper {
+	class Creeper:public Animal {
 		public:
 			Creeper();
 			virtual ~Creeper();

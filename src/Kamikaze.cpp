@@ -1,5 +1,4 @@
 using namespace std;
-
 #include "Kamikaze.h"
 
 	Kamikaze::Kamikaze() {

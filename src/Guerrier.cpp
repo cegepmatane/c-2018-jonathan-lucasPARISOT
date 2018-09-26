@@ -1,7 +1,5 @@
-#include "Guerrier.h"
-
 using namespace std;
-
+#include "Guerrier.h"
 
 	Guerrier::Guerrier(){
 

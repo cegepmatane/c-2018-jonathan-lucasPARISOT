@@ -2,13 +2,14 @@
 #define PERSONNAGE_H_
 
 #include <iostream>
+#include "Animal.h"
 
 namespace std{
 
 	class Personnage{
 
 	public:
-		Personnage();
+		Personnage(Animal animal);
 		virtual ~Personnage();
 		virtual void attaquer();
 		virtual void avancer();

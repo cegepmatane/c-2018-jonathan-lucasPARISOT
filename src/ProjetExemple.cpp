@@ -11,10 +11,21 @@ using namespace std;
 #include "Guerrier.h"
 #include "Kamikaze.h"
 #include "Mage.h"
+#include "Corbeau.h"
+#include "Chaton.h"
+#include "Creeper.h"
 #include <iostream>
 
 int main() {
 	
+	Animal* referenceCorbeau = new Corbeau();
+	referenceCorbeau->crier();
+
+	Animal* referenceChaton = new Chaton();
+	referenceChaton->crier();
+
+	Animal* referenceCreeper = new Creeper();
+	referenceCreeper->crier();
 
 	Personnage* referencePersonnageGuerrier = new Guerrier();
 	referencePersonnageGuerrier->avancer();

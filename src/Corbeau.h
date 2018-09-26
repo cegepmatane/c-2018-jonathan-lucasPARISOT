@@ -6,7 +6,7 @@
 
 namespace std {
 
-	class Corbeau {
+	class Corbeau:public Animal {
 		public:
 			Corbeau();
 			virtual ~Corbeau();

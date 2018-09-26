@@ -6,7 +6,7 @@
 
 namespace std {
 
-	class Chaton {
+	class Chaton:public Animal {
 		public:
 			Chaton();
 			virtual ~Chaton();

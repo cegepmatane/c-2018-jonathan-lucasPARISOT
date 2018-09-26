@@ -1,9 +1,12 @@
 using namespace std;
 #include "Personnage.h"
 #include <iostream>
+#include <vector>
 
 
-	Personnage::Personnage() {
+	vector <Animal> listeAnimal;
+
+	Personnage::Personnage(Animal animal) {
 
 	}
 
