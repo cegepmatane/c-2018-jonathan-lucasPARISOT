@@ -42,6 +42,9 @@ int main() {
 	referencePersonnageMage->rotationDroite();
 
 
+	Personnage* referencePersonnage = new Personnage(new Corbeau());
+	referencePersonnage->direAnimal();
+
 	delete referencePersonnageGuerrier;
 	delete referencePersonnageKamikaze;
 	delete referencePersonnageMage;

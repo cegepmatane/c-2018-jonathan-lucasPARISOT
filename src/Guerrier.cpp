@@ -1,5 +1,6 @@
-using namespace std;
 #include "Guerrier.h"
+
+using namespace std;
 
 	Guerrier::Guerrier(){
 
@@ -11,7 +12,5 @@ using namespace std;
 	void Guerrier::avancer() {
 		cout << "Allons vers l'ennemi !" <<endl;
 	}
-
-
 
 

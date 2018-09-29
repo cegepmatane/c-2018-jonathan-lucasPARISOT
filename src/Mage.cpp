@@ -1,5 +1,6 @@
-using namespace std;
 #include "Mage.h"
+
+using namespace std;
 
 	Mage::Mage() {
 

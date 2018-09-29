@@ -8,13 +8,24 @@ namespace std{
 
 	class Personnage{
 
+
+
 	public:
-		Personnage(Animal animal);
+
+		Personnage();
+		Personnage(Animal* animal);
+		Personnage(string nom);
 		virtual ~Personnage();
+
+		string nom;
+		Animal animal;
+
 		virtual void attaquer();
 		virtual void avancer();
 		void rotationGauche();
 		void rotationDroite();
+		void direNom();
+		void direAnimal();
 
 	};
 }

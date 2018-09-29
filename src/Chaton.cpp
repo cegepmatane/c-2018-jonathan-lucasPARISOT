@@ -1,6 +1,6 @@
 #include "Chaton.h"
 
-namespace std {
+using namespace std;
 
 	Chaton::Chaton() {
 	}
@@ -12,4 +12,3 @@ namespace std {
 		cout << "Miaooooo !" <<endl;
 	}
 
-}

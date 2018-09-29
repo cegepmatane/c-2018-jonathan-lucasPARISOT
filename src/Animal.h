@@ -9,7 +9,11 @@ namespace std {
 		public:
 			Animal();
 			virtual ~Animal();
+
+			string nom;
+
 			virtual void crier();
+			void nomAnimal();
 	};
 
 }

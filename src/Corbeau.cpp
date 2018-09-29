@@ -1,6 +1,6 @@
 #include "Corbeau.h"
 
-namespace std {
+using namespace std;
 
 	Corbeau::Corbeau() {
 	}
@@ -12,4 +12,3 @@ namespace std {
 		cout << "Croaaa !" <<endl;
 	}
 
-}

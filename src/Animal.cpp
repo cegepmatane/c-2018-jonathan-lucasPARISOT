@@ -1,6 +1,6 @@
 #include "Animal.h"
 
-namespace std {
+using namespace std;
 
 	Animal::Animal() {
 	}
@@ -11,4 +11,8 @@ namespace std {
 	void Animal::crier(){
 		cout << "crier !" <<endl;
 	}
-}
+
+	void Animal::nomAnimal(){
+		cout << nom <<endl;
+	}
+
