@@ -6,15 +6,19 @@ using namespace std;
 
 
 	Personnage::Personnage() {
-
+		nom="";
+		pv=0;
 	}
 
-	Personnage::Personnage(Animal& p_animal) {
+	Personnage::Personnage(Animal& p_animal,string p_nom,int p_pv) {
 		animal=p_animal;
+		nom=p_nom;
+		pv=p_pv;
 	}
 
-	Personnage::Personnage(string nom) {
-
+	Personnage::Personnage(string p_nom,int p_pv) {
+		nom=p_nom;
+		pv=p_pv;
 	}
 
 	Personnage::~Personnage() {

@@ -13,11 +13,12 @@ namespace std{
 	public:
 
 		Personnage();
-		Personnage(Animal& animal);
-		Personnage(string nom);
+		Personnage(Animal& animal,string nom,int pv);
+		Personnage(string nom,int pv);
 		virtual ~Personnage();
 
 		string nom;
+		int pv;
 		Animal animal;
 
 		virtual void attaquer();

@@ -12,6 +12,8 @@ namespace std{
 
 	public:
 		Guerrier();
+		Guerrier(Animal& animal,string,int);
+		Guerrier(string,int);
 		void attaquer();
 		void avancer();
 	};

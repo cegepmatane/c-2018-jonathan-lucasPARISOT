@@ -27,22 +27,23 @@ int main() {
 	Animal* referenceCreeper = new Creeper("tchyy");
 	referenceCreeper->crier();
 
-	Personnage* referencePersonnageGuerrier = new Guerrier();
+	Personnage* referencePersonnageGuerrier = new Guerrier("Bobby",20);
 	referencePersonnageGuerrier->avancer();
 	referencePersonnageGuerrier->attaquer();
 
-	Personnage* referencePersonnageKamikaze = new Kamikaze();
+	Personnage* referencePersonnageKamikaze = new Kamikaze("Morty",1);
 	referencePersonnageKamikaze->avancer();
 	referencePersonnageKamikaze->attaquer();
 
-	Personnage* referencePersonnageMage = new Mage();
+	Personnage* referencePersonnageMage = new Mage(*referenceChaton,"Gandalf",200);
 	referencePersonnageMage->avancer();
 	referencePersonnageMage->attaquer();
+	referencePersonnageMage->direAnimal();
 
 	referencePersonnageMage->rotationDroite();
 
 
-	Personnage* referencePersonnage = new Personnage(*referenceCorbeau);
+	Personnage* referencePersonnage = new Personnage(*referenceCorbeau,"Peon",3);
 	referencePersonnage->direAnimal();
 
 	delete referencePersonnageGuerrier;
