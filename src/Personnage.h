@@ -13,7 +13,7 @@ namespace std{
 	public:
 
 		Personnage();
-		Personnage(Animal* animal);
+		Personnage(Animal& animal);
 		Personnage(string nom);
 		virtual ~Personnage();
 

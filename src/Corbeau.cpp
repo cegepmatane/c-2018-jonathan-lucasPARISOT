@@ -2,7 +2,8 @@
 
 using namespace std;
 
-	Corbeau::Corbeau() {
+	Corbeau::Corbeau(string p_nom) {
+		nom=p_nom;
 	}
 
 	Corbeau::~Corbeau() {

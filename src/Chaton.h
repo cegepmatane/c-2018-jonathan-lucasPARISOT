@@ -8,7 +8,7 @@ namespace std {
 
 	class Chaton:public Animal {
 		public:
-			Chaton();
+			Chaton(string);
 			virtual ~Chaton();
 			void crier();
 	};

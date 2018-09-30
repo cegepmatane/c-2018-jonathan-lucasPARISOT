@@ -2,7 +2,8 @@
 
 namespace std {
 
-	Creeper::Creeper() {
+	Creeper::Creeper(string p_nom) {
+		nom=p_nom;
 	}
 
 	Creeper::~Creeper() {

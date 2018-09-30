@@ -8,7 +8,7 @@ namespace std {
 
 	class Creeper:public Animal {
 		public:
-			Creeper();
+			Creeper(string);
 			virtual ~Creeper();
 			void crier();
 	};

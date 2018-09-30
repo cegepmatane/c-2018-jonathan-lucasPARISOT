@@ -8,7 +8,7 @@ namespace std {
 
 	class Corbeau:public Animal {
 		public:
-			Corbeau();
+			Corbeau(string);
 			virtual ~Corbeau();
 			void crier();
 	};

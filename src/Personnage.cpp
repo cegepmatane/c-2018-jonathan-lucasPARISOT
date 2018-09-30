@@ -9,8 +9,8 @@ using namespace std;
 
 	}
 
-	Personnage::Personnage(Animal* animal) {
-
+	Personnage::Personnage(Animal& p_animal) {
+		animal=p_animal;
 	}
 
 	Personnage::Personnage(string nom) {

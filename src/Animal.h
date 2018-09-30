@@ -8,6 +8,7 @@ namespace std {
 	class Animal {
 		public:
 			Animal();
+			Animal(string);
 			virtual ~Animal();
 
 			string nom;

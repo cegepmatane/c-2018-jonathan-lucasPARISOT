@@ -2,7 +2,8 @@
 
 using namespace std;
 
-	Chaton::Chaton() {
+	Chaton::Chaton(string p_nom) {
+		nom=p_nom;
 	}
 
 	Chaton::~Chaton() {
