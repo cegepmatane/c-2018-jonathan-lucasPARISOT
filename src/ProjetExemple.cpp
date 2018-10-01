@@ -15,6 +15,7 @@ using namespace std;
 #include "Chaton.h"
 #include "Creeper.h"
 #include <iostream>
+#include <fstream>
 
 int main() {
 	
@@ -46,8 +47,44 @@ int main() {
 	Personnage* referencePersonnage = new Personnage(*referenceCorbeau,"Peon",3);
 	referencePersonnage->direAnimal();
 
+
 	delete referencePersonnageGuerrier;
 	delete referencePersonnageKamikaze;
 	delete referencePersonnageMage;
+
+
+
+
+	ifstream sourceAnimaux;
+	sourceAnimaux.open("data/animaux.csv");
+	string ligne;
+
+	while(!sourceAnimaux.eof()) {
+		unsigned int positionDebut=0;
+		unsigned int positionFin=0;
+
+		getline(sourceAnimaux,ligne);
+
+		do{
+			positionFin = ligne.find(";",positionDebut);
+			string valeur = ligne.substr(positionDebut,positionFin-positionDebut);
+			Animal* animal=new Animal(valeur);
+			cout << valeur << endl;
+			positionDebut=positionFin+1;
+		}
+		while(positionDebut!=0);
+
+	}
+
+
+
+
 	return 0;
 }
+
+
+
+
+
+
+
