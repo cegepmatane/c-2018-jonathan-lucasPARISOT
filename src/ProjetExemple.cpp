@@ -20,39 +20,38 @@ using namespace std;
 
 int main() {
 	
+	Tools* tools = new Tools();
+	tools->importer();
+
 	Animal* referenceCorbeau = new Corbeau("croby");
-	referenceCorbeau->crier();
+	//referenceCorbeau->crier();
 
 	Animal* referenceChaton = new Chaton("maowy");
-	referenceChaton->crier();
+	//referenceChaton->crier();
 
 	Animal* referenceCreeper = new Creeper("tchyy");
-	referenceCreeper->crier();
+	//referenceCreeper->crier();
 
 	Personnage* referencePersonnageGuerrier = new Guerrier("Bobby",20);
-	referencePersonnageGuerrier->avancer();
-	referencePersonnageGuerrier->attaquer();
+	//referencePersonnageGuerrier->avancer();
+	//referencePersonnageGuerrier->attaquer();
 
 	Personnage* referencePersonnageKamikaze = new Kamikaze("Morty",1);
-	referencePersonnageKamikaze->avancer();
-	referencePersonnageKamikaze->attaquer();
+	//referencePersonnageKamikaze->avancer();
+	//referencePersonnageKamikaze->attaquer();
 
 	Personnage* referencePersonnageMage = new Mage(*referenceChaton,"Gandalf",200);
-	referencePersonnageMage->avancer();
-	referencePersonnageMage->attaquer();
-	referencePersonnageMage->direAnimal();
+	//referencePersonnageMage->avancer();
+	//referencePersonnageMage->attaquer();
+	//referencePersonnageMage->direAnimal();
 
-	referencePersonnageMage->rotationDroite();
+	//referencePersonnageMage->rotationDroite();
 
 
 	Personnage* referencePersonnage = new Personnage(*referenceCorbeau,"Peon",3);
-	referencePersonnage->direAnimal();
+	//referencePersonnage->direAnimal();
 
-	cout << referencePersonnageMage->exporter()<< endl;
-
-
-	Tools* tools = new Tools();
-	tools->importer();
+	//cout << referencePersonnageMage->exporter()<< endl;
 
 	ofstream fichierMonde;
 	fichierMonde.open("data/monde.xml");
