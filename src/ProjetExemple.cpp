@@ -14,6 +14,7 @@ using namespace std;
 #include "Corbeau.h"
 #include "Chaton.h"
 #include "Creeper.h"
+#include "Tools.h"
 #include <iostream>
 #include <fstream>
 
@@ -47,42 +48,41 @@ int main() {
 	Personnage* referencePersonnage = new Personnage(*referenceCorbeau,"Peon",3);
 	referencePersonnage->direAnimal();
 
+	cout << referencePersonnageMage->exporter()<< endl;
+
+
+	Tools* tools = new Tools();
+	tools->importer();
+
+	ofstream fichierMonde;
+	fichierMonde.open("data/monde.xml");
+	fichierMonde << "<Monde>" << endl;
+	fichierMonde << "<Animaux>" << endl;
+	fichierMonde << referenceCorbeau->exporter() << endl;
+	fichierMonde << referenceChaton->exporter() << endl;
+	fichierMonde << referenceCreeper->exporter() << endl;
+	fichierMonde << "</Animaux>" << endl;
+	fichierMonde << "<Personnages>" << endl;
+	fichierMonde << referencePersonnageGuerrier->exporter() << endl;
+	fichierMonde << referencePersonnageKamikaze->exporter() << endl;
+	fichierMonde << referencePersonnageMage->exporter() << endl;
+	fichierMonde << "</Personnages>" << endl;
+	fichierMonde << "</Monde>" << endl;
+
+	fichierMonde.close();
 
 	delete referencePersonnageGuerrier;
 	delete referencePersonnageKamikaze;
 	delete referencePersonnageMage;
 
-
-
-
-	ifstream sourceAnimaux;
-	sourceAnimaux.open("data/animaux.csv");
-	string ligne;
-
-	while(!sourceAnimaux.eof()) {
-		unsigned int positionDebut=0;
-		unsigned int positionFin=0;
-
-		getline(sourceAnimaux,ligne);
-
-		do{
-			positionFin = ligne.find(";",positionDebut);
-			string valeur = ligne.substr(positionDebut,positionFin-positionDebut);
-			Animal* animal=new Animal(valeur);
-			cout << valeur << endl;
-			positionDebut=positionFin+1;
-		}
-		while(positionDebut!=0);
-
-	}
-
+	delete referenceCorbeau;
+	delete referenceChaton;
+	delete referenceCreeper;
 
 
 
 	return 0;
 }
-
-
 
 
 

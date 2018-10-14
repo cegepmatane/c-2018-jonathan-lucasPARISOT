@@ -27,6 +27,7 @@ namespace std{
 		void rotationDroite();
 		void direNom();
 		void direAnimal();
+		virtual string exporter();
 
 	};
 }

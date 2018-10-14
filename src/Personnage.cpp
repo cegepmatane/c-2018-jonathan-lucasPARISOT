@@ -1,5 +1,6 @@
 #include "Personnage.h"
 #include <iostream>
+#include <sstream>
 #include <vector>
 
 using namespace std;
@@ -50,4 +51,12 @@ using namespace std;
 	void Personnage::direAnimal() {
 		cout << this->animal.nom << endl;
 		// Pour tester
+	}
+
+	string Personnage::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Personnage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Personnage>";
+
+		return xml.str();
 	}

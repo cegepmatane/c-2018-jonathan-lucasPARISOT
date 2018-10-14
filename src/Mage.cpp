@@ -1,4 +1,5 @@
 #include "Mage.h"
+#include <sstream>
 
 using namespace std;
 
@@ -18,5 +19,13 @@ using namespace std;
 	}
 	void Mage::avancer() {
 		cout << "Velocitas Maximum !" <<endl;
+	}
+
+	string Mage::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Mage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Mage>";
+
+		return xml.str();
 	}
 

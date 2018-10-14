@@ -14,6 +14,7 @@ namespace std{
 		Kamikaze(string,int);
 		void attaquer();
 		void avancer();
+		string exporter();
 	};
 
 }

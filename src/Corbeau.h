@@ -11,6 +11,7 @@ namespace std {
 			Corbeau(string);
 			virtual ~Corbeau();
 			void crier();
+			string exporter();
 	};
 
 }

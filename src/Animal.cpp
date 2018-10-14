@@ -1,4 +1,5 @@
 #include "Animal.h"
+#include <sstream>
 
 using namespace std;
 
@@ -19,5 +20,13 @@ using namespace std;
 
 	void Animal::nomAnimal(){
 		cout << nom <<endl;
+	}
+
+	string Animal::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Animal><nom>" << this->nom << "</nom></Animal>";
+
+		return xml.str();
 	}
 

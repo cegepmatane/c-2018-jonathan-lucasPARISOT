@@ -11,6 +11,7 @@ namespace std {
 			Chaton(string);
 			virtual ~Chaton();
 			void crier();
+			string exporter();
 	};
 
 	}

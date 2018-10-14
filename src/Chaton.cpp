@@ -1,4 +1,5 @@
 #include "Chaton.h"
+#include <sstream>
 
 using namespace std;
 
@@ -11,5 +12,13 @@ using namespace std;
 
 	void Chaton::crier(){
 		cout << "Miaooooo !" <<endl;
+	}
+
+	string Chaton::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Chaton><nom>" << this->nom << "</nom></Chaton>";
+
+		return xml.str();
 	}
 

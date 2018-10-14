@@ -1,4 +1,5 @@
 using namespace std;
+#include <sstream>
 #include "Kamikaze.h"
 
 	Kamikaze::Kamikaze(Animal& p_animal,string p_nom,int p_pv) {
@@ -17,4 +18,12 @@ using namespace std;
 	}
 	void Kamikaze::avancer() {
 		cout << "Allons vers notre devoir !" <<endl;
+	}
+
+	string Kamikaze::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Kamikaze><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Kamikaze>";
+
+		return xml.str();
 	}

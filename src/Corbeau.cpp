@@ -1,4 +1,5 @@
 #include "Corbeau.h"
+#include <sstream>
 
 using namespace std;
 
@@ -11,5 +12,13 @@ using namespace std;
 
 	void Corbeau::crier(){
 		cout << "Croaaa !" <<endl;
+	}
+
+	string Corbeau::exporter(){
+		// Exporte en formal XML
+		stringstream xml;
+		xml << "<Corbeau><nom>" << this->nom << "</nom></Corbeau>";
+
+		return xml.str();
 	}
 

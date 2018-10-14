@@ -11,6 +11,7 @@ namespace std {
 			Creeper(string);
 			virtual ~Creeper();
 			void crier();
+			string exporter();
 	};
 
 }

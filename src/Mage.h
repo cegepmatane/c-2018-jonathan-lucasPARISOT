@@ -14,6 +14,7 @@ namespace std{
 		Mage(Animal& animal,string,int);
 		void attaquer();
 		void avancer();
+		string exporter();
 	};
 }
 
