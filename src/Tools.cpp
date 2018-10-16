@@ -2,8 +2,9 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
+using namespace std;
 
-namespace std {
 
 Tools::Tools() {
 	// TODO Auto-generated constructor stub
@@ -14,6 +15,7 @@ Tools::~Tools() {
 	// TODO Auto-generated destructor stub
 }
 
+// Dans chacun des constructeurs.
 void Tools::importer(){
 
 	importerAnimaux();
@@ -24,7 +26,6 @@ void Tools::importer(){
 	importerGuerrier();
 	importerKamikaze();
 	importerMage();
-
 
 	}
 
@@ -293,6 +294,3 @@ void Tools::importerMage(){
 		}
 
 }
-
-
-} /* namespace std */
