@@ -1,10 +1,12 @@
 #include "Creeper.h"
+#include <iostream>
+#include <fstream>
 #include <sstream>
 
 namespace std {
 
-	Creeper::Creeper(string p_nom) {
-		nom=p_nom;
+	Creeper::Creeper() {
+		importer();
 	}
 
 	Creeper::~Creeper() {
@@ -20,5 +22,33 @@ namespace std {
 		xml << "<Creeper><nom>" << this->nom << "</nom></Creeper>";
 
 		return xml.str();
+	}
+
+	void Creeper::importer() {
+
+		ifstream sourceCreeper;
+		sourceCreeper.open("data/creeper.csv");
+		string ligne;
+
+		while (!sourceCreeper.eof()) {
+			unsigned int positionDebut = 0;
+			unsigned int positionFin = 0;
+
+			int compteurMot = 0;
+
+			getline(sourceCreeper, ligne);
+
+			do {
+				positionFin = ligne.find(";", positionDebut);
+				string valeur = ligne.substr(positionDebut, positionFin - positionDebut);
+				this->nom = valeur;
+				cout << valeur << endl;
+				positionDebut = positionFin + 1;
+			} while (positionDebut != 0);
+
+		}
+
+		cout << endl;
+
 	}
 }

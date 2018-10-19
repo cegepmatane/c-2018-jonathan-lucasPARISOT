@@ -8,7 +8,6 @@ namespace std {
 	class Animal {
 		public:
 			Animal();
-			Animal(string);
 			virtual ~Animal();
 
 			string nom;
@@ -16,6 +15,7 @@ namespace std {
 			virtual void crier();
 			void nomAnimal();
 			virtual string exporter();
+			void importer();
 	};
 
 }

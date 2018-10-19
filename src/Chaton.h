@@ -8,10 +8,11 @@ namespace std {
 
 	class Chaton:public Animal {
 		public:
-			Chaton(string);
+			Chaton();
 			virtual ~Chaton();
 			void crier();
 			string exporter();
+			void importer();
 	};
 
 	}

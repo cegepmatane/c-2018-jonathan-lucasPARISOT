@@ -13,8 +13,6 @@ namespace std{
 	public:
 
 		Personnage();
-		Personnage(Animal& animal,string nom,int pv);
-		Personnage(string nom,int pv);
 		virtual ~Personnage();
 
 		string nom;
@@ -28,6 +26,8 @@ namespace std{
 		void direNom();
 		void direAnimal();
 		virtual string exporter();
+		void importer();
+		void ajouterAnimal(Animal& p_animal);
 
 	};
 }

@@ -12,11 +12,11 @@ namespace std{
 
 	public:
 		Guerrier();
-		Guerrier(Animal& animal,string,int);
-		Guerrier(string,int);
 		void attaquer();
 		void avancer();
+		void ajouterAnimal(Animal& p_animal);
 		string exporter();
+		void importer();
 	};
 
 }

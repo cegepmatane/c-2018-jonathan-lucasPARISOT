@@ -10,11 +10,11 @@ namespace std{
 
 	public:
 		Kamikaze();
-		Kamikaze(Animal& animal,string,int);
-		Kamikaze(string,int);
 		void attaquer();
 		void avancer();
 		string exporter();
+		void importer();
+		void ajouterAnimal(Animal& p_animal);
 	};
 
 }
