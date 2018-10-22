@@ -13,7 +13,7 @@ namespace std {
 	}
 
 	void Creeper::crier(){
-			cout << "Tchhhhhhh !" <<endl;
+			cout << "Tchhhhhhh !";
 	}
 
 	string Creeper::exporter(){
@@ -42,13 +42,11 @@ namespace std {
 				positionFin = ligne.find(";", positionDebut);
 				string valeur = ligne.substr(positionDebut, positionFin - positionDebut);
 				this->nom = valeur;
-				cout << valeur << endl;
+				//cout << valeur << endl;
 				positionDebut = positionFin + 1;
 			} while (positionDebut != 0);
 
 		}
-
-		cout << endl;
-
+		sourceCreeper.close();
 	}
 }

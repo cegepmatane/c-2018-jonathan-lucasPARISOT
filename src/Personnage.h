@@ -8,8 +8,6 @@ namespace std{
 
 	class Personnage{
 
-
-
 	public:
 
 		Personnage();
@@ -21,14 +19,14 @@ namespace std{
 
 		virtual void attaquer();
 		virtual void avancer();
-		void rotationGauche();
-		void rotationDroite();
-		void direNom();
-		void direAnimal();
+		virtual void rotationGauche();
+		virtual void rotationDroite();
+		virtual void direNom();
+		virtual void direAnimal();
 		virtual string exporter();
-		void importer();
-		void ajouterAnimal(Animal& p_animal);
-
+		virtual void importer();
+		virtual void ajouterAnimal(Animal& p_animal);
+		virtual Personnage& operator++();
 	};
 }
 

@@ -13,7 +13,7 @@ using namespace std;
 	}
 
 	void Corbeau::crier(){
-		cout << "Croaaa !" <<endl;
+		cout << "Croaaa !";
 	}
 
 	string Corbeau::exporter(){
@@ -42,13 +42,11 @@ using namespace std;
 				positionFin = ligne.find(";", positionDebut);
 				string valeur = ligne.substr(positionDebut, positionFin - positionDebut);
 				this->nom = valeur;
-				cout << valeur << endl;
+				//cout << valeur << endl;
 				positionDebut = positionFin + 1;
 			} while (positionDebut != 0);
 
 		}
-
-		cout << endl;
-
+		sourceCorbeau.close();
 	}
 

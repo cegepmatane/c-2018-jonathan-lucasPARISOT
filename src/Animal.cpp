@@ -13,7 +13,7 @@ using namespace std;
 	}
 
 	void Animal::crier(){
-		cout << "crier !" <<endl;
+		cout << "crier !";
 	}
 
 	void Animal::nomAnimal(){
@@ -48,7 +48,6 @@ using namespace std;
 			} while (positionDebut != 0);
 
 		}
-
-		cout << endl;
+		sourceAnimaux.close();
 	}
 
