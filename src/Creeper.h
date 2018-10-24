@@ -10,7 +10,7 @@ namespace std {
 		public:
 			Creeper();
 			virtual ~Creeper();
-			void crier();
+			string crier();
 			string exporter();
 			void importer();
 	};

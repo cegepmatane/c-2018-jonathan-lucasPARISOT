@@ -15,12 +15,12 @@ Mage::Mage(string nom, int pv, Animal animal) {
 	this->animal = animal;
 }
 
-void Mage::attaquer() {
-	cout << "Abracadabra !";
+string Mage::attaquer() {
+	return "Abracadabra !";
 }
 
-void Mage::avancer() {
-	cout << "Velocitas Maximum !";
+string Mage::avancer() {
+	return "Velocitas Maximum !";
 }
 
 string Mage::exporter(){

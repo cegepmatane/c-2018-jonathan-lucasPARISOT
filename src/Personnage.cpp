@@ -27,28 +27,28 @@ Personnage & std::Personnage::operator++()
 }
 
 
-void Personnage::attaquer() {
-	cout << "Le personnage attaque";
+string Personnage::attaquer() {
+	return "Le personnage attaque";
 }
-void Personnage::avancer() {
-	cout << "Le personnage avance";
+string Personnage::avancer() {
+	return "Le personnage avance";
 }
-void Personnage::rotationGauche() {
-	cout << "Gauche !";
+string Personnage::rotationGauche() {
+	return "Gauche !";
 	// Pour tester
 }
-void Personnage::rotationDroite() {
-	cout << "Droite !";
-	// Pour tester
-}
-
-void Personnage::direNom() {
-	cout << this->nom;
+string Personnage::rotationDroite() {
+	return "Droite !";
 	// Pour tester
 }
 
-void Personnage::direAnimal() {
-	cout << this->animal.nom;
+string Personnage::direNom() {
+	return "Mon nom est " + this->nom;
+	// Pour tester
+}
+
+string Personnage::direAnimal() {
+	return "Son nom est " + this->animal.nom;
 	// Pour tester
 }
 

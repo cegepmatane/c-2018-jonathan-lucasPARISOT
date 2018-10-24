@@ -11,8 +11,8 @@ namespace std{
 	public:
 		Mage();
 		Mage(string, int, Animal);
-		void attaquer();
-		void avancer();
+		string attaquer();
+		string avancer();
 		string exporter();
 		void importer();
 		void ajouterAnimal(Animal& p_animal);

@@ -13,8 +13,8 @@ namespace std{
 	public:
 		Guerrier();
 		Guerrier(string, int, Animal);
-		void attaquer();
-		void avancer();
+		string attaquer();
+		string avancer();
 		void ajouterAnimal(Animal& p_animal);
 		string exporter();
 		void importer();

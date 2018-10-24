@@ -15,12 +15,12 @@ Kamikaze::Kamikaze(string nom, int pv, Animal animal) {
 	this->animal = animal;
 }
 
-void Kamikaze::attaquer() {
-	cout << "Tenno heika banzai !";
+string Kamikaze::attaquer() {
+	return "Tenno heika banzai !";
 }
 
-void Kamikaze::avancer() {
-	cout << "Allons vers notre devoir !";
+string Kamikaze::avancer() {
+	return "Allons vers notre devoir !";
 }
 
 void Kamikaze::ajouterAnimal(Animal& p_animal) {

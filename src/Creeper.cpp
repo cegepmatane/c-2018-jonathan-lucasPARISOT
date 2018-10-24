@@ -12,8 +12,8 @@ namespace std {
 	Creeper::~Creeper() {
 	}
 
-	void Creeper::crier(){
-			cout << "Tchhhhhhh !";
+	string Creeper::crier(){
+			return "Tchhhhhhh !";
 	}
 
 	string Creeper::exporter(){

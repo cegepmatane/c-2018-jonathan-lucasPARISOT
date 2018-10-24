@@ -12,8 +12,8 @@ using namespace std;
 	Corbeau::~Corbeau() {
 	}
 
-	void Corbeau::crier(){
-		cout << "Croaaa !";
+	string Corbeau::crier(){
+		return "Croaaa !";
 	}
 
 	string Corbeau::exporter(){

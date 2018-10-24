@@ -12,8 +12,8 @@ namespace std {
 
 			string nom;
 
-			virtual void crier();
-			void nomAnimal();
+			virtual string crier();
+			string nomAnimal();
 			virtual string exporter();
 			void importer();
 	};

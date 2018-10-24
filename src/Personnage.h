@@ -17,12 +17,12 @@ namespace std{
 		int pv;
 		Animal animal;
 
-		virtual void attaquer();
-		virtual void avancer();
-		virtual void rotationGauche();
-		virtual void rotationDroite();
-		virtual void direNom();
-		virtual void direAnimal();
+		virtual string attaquer();
+		virtual string avancer();
+		virtual string rotationGauche();
+		virtual string rotationDroite();
+		virtual string direNom();
+		virtual string direAnimal();
 		virtual string exporter();
 		virtual void importer();
 		virtual void ajouterAnimal(Animal& p_animal);

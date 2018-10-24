@@ -15,12 +15,12 @@ Guerrier::Guerrier(string nom, int pv, Animal animal) {
 	this->animal = animal;
 }
 
-void Guerrier::attaquer() {
-	cout << "A l'attaque !";
+string Guerrier::attaquer() {
+	return "A l'attaque !";
 }
 
-void Guerrier::avancer() {
-	cout << "Allons vers l'ennemi !";
+string Guerrier::avancer() {
+	return "Allons vers l'ennemi !";
 }
 
 string Guerrier::exporter(){

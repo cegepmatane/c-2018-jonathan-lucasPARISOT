@@ -12,12 +12,12 @@ using namespace std;
 	Animal::~Animal() {
 	}
 
-	void Animal::crier(){
-		cout << "crier !";
+	string Animal::crier(){
+		return "crier !";
 	}
 
-	void Animal::nomAnimal(){
-		cout << nom <<endl;
+	string Animal::nomAnimal(){
+		return "Son nom est " + this->nom;
 	}
 
 	string Animal::exporter(){

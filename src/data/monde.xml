@@ -3,10 +3,11 @@
 <Corbeau><nom>croby</nom></Corbeau>
 <Chaton><nom>maowy</nom></Chaton>
 <Creeper><nom>tchyy</nom></Creeper>
+<Creeper><nom>tchyy</nom></Creeper>
 </Animaux>
 <Personnages>
 <Guerrier><nom>Bobby</nom><pv>20</pv><Animal></Animal></Guerrier>
 <Kamikaze><nom>Morty</nom><pv>1</pv><Animal></Animal></Kamikaze>
-<Mage><nom>Gandalf</nom><pv>200</pv><Animal>maowy</Animal></Mage>
+<Mage><nom>Gandalf</nom><pv>5600</pv><Animal>maowy</Animal></Mage>
 </Personnages>
 </Monde>

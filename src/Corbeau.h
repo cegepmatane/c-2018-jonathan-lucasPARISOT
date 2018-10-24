@@ -10,7 +10,7 @@ namespace std {
 		public:
 			Corbeau();
 			virtual ~Corbeau();
-			void crier();
+			string crier();
 			string exporter();
 			void importer();
 	};

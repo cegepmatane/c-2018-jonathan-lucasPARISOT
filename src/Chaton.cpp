@@ -12,8 +12,8 @@ using namespace std;
 	Chaton::~Chaton() {
 	}
 
-	void Chaton::crier(){
-		cout << "Miaooooo !";
+	string Chaton::crier(){
+		return "Miaooooo !";
 	}
 
 	string Chaton::exporter(){

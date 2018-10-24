@@ -10,7 +10,7 @@ namespace std {
 		public:
 			Chaton();
 			virtual ~Chaton();
-			void crier();
+			string crier();
 			string exporter();
 			void importer();
 	};
