@@ -17,7 +17,7 @@ Personnage::~Personnage() {
 }
 
 
-void Personnage::ajouterAnimal(Animal& p_animal) {
+void Personnage::ajouterAnimal(Animal* p_animal) {
 	this->animal = p_animal;
 }
 
@@ -47,15 +47,10 @@ string Personnage::direNom() {
 	// Pour tester
 }
 
-string Personnage::direAnimal() {
-	return "Son nom est " + this->animal.nom;
-	// Pour tester
-}
-
 string Personnage::exporter(){
 	// Exporte en formal XML
 	stringstream xml;
-	xml << "<Personnage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Personnage>";
+	xml << "<Personnage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal->nom << "</Animal></Personnage>";
 
 	return xml.str();
 }

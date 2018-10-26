@@ -13,6 +13,7 @@ namespace std {
 			string crier();
 			string exporter();
 			void importer();
+			string espece();
 	};
 
 	}

@@ -9,7 +9,7 @@ Kamikaze::Kamikaze() {
 	importer();
 }
 
-Kamikaze::Kamikaze(string nom, int pv, Animal animal) {
+Kamikaze::Kamikaze(string nom, int pv, Animal* animal) {
 	this->nom = nom;
 	this->pv = pv;
 	this->animal = animal;
@@ -23,14 +23,14 @@ string Kamikaze::avancer() {
 	return "Allons vers notre devoir !";
 }
 
-void Kamikaze::ajouterAnimal(Animal& p_animal) {
+void Kamikaze::ajouterAnimal(Animal* p_animal) {
 	this->animal = p_animal;
 }
 
 string Kamikaze::exporter(){
 	// Exporte en formal XML
 	stringstream xml;
-	xml << "<Kamikaze><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Kamikaze>";
+	xml << "<Kamikaze><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal->nom << "</Animal></Kamikaze>";
 
 	return xml.str();
 }

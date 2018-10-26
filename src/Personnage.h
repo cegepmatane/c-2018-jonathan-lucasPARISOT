@@ -15,17 +15,16 @@ namespace std{
 
 		string nom;
 		int pv;
-		Animal animal;
+		Animal* animal;
 
 		virtual string attaquer();
 		virtual string avancer();
 		virtual string rotationGauche();
 		virtual string rotationDroite();
 		virtual string direNom();
-		virtual string direAnimal();
 		virtual string exporter();
 		virtual void importer();
-		virtual void ajouterAnimal(Animal& p_animal);
+		virtual void ajouterAnimal(Animal* p_animal);
 		virtual Personnage& operator++();
 	};
 }

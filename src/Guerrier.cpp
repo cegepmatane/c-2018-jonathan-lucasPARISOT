@@ -9,7 +9,7 @@ Guerrier::Guerrier() {
 	importer();
 }
 
-Guerrier::Guerrier(string nom, int pv, Animal animal) {
+Guerrier::Guerrier(string nom, int pv, Animal* animal) {
 	this-> nom = nom;
 	this-> pv = pv;
 	this->animal = animal;
@@ -26,12 +26,12 @@ string Guerrier::avancer() {
 string Guerrier::exporter(){
 	// Exporte en formal XML
 	stringstream xml;
-	xml << "<Guerrier><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Guerrier>";
+	xml << "<Guerrier><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal->nom << "</Animal></Guerrier>";
 
 	return xml.str();
 }
 
-void Guerrier::ajouterAnimal(Animal& p_animal) {
+void Guerrier::ajouterAnimal(Animal* p_animal) {
 	this->animal = p_animal;
 }
 

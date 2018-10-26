@@ -9,7 +9,7 @@ Mage::Mage() {
 	importer();
 }
 
-Mage::Mage(string nom, int pv, Animal animal) {
+Mage::Mage(string nom, int pv, Animal* animal) {
 	this->nom = nom;
 	this->pv = pv;
 	this->animal = animal;
@@ -26,12 +26,12 @@ string Mage::avancer() {
 string Mage::exporter(){
 	// Exporte en formal XML
 	stringstream xml;
-	xml << "<Mage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal.nom << "</Animal></Mage>";
+	xml << "<Mage><nom>" << this->nom << "</nom><pv>" << this->pv << "</pv><Animal>" << this->animal->nom << "</Animal></Mage>";
 
 	return xml.str();
 }
 
-void Mage::ajouterAnimal(Animal& p_animal) {
+void Mage::ajouterAnimal(Animal* p_animal) {
 	this->animal = p_animal;
 }
 

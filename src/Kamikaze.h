@@ -10,12 +10,12 @@ namespace std{
 
 	public:
 		Kamikaze();
-		Kamikaze(string, int, Animal);
+		Kamikaze(string, int, Animal*);
 		string attaquer();
 		string avancer();
 		string exporter();
 		void importer();
-		void ajouterAnimal(Animal& p_animal);
+		void ajouterAnimal(Animal* p_animal);
 		Kamikaze& operator++();
 	};
 

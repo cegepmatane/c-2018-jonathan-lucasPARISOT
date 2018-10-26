@@ -10,12 +10,12 @@ namespace std{
 
 	public:
 		Mage();
-		Mage(string, int, Animal);
+		Mage(string, int, Animal*);
 		string attaquer();
 		string avancer();
 		string exporter();
 		void importer();
-		void ajouterAnimal(Animal& p_animal);
+		void ajouterAnimal(Animal* p_animal);
 		Mage& operator++();
 	};
 }

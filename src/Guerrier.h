@@ -12,10 +12,10 @@ namespace std{
 
 	public:
 		Guerrier();
-		Guerrier(string, int, Animal);
+		Guerrier(string, int, Animal*);
 		string attaquer();
 		string avancer();
-		void ajouterAnimal(Animal& p_animal);
+		void ajouterAnimal(Animal* p_animal);
 		string exporter();
 		void importer();
 		Personnage& operator++();
